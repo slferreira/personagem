@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/capitãoamérica1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 1700px;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fafafa;
+}
+
+header {
+    height: 80px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav img {
+    width: 200px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a:link {
+    color: #fafafa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+header nav ul li a:hover {
+    transition: 0.5s;
+}
+
+main {
+    width: 100%;
+    height: 600px;
+}
+
+main .contents {
+    width: 850px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .contents img {
+    width: 100%;
+}
+
+main p {
+    width: 100%;
+    text-align: center;
+    color: #fafafa;
+    font-weight: 20px;
+    padding: 30px;
+    line-height: 24px;
+}
+
+.contents button {
+    border: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgba(221, 12, 12, 0.8);
+    color: #fafafa;
+    align-self: center;
+    width: fit-content;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*table version*/
+
+@media(max-width:1024px) {
+    .container {
+        width: 1000px;
+        height: 600px;
+    }
+    main {
+        width: 600px;
+        height: 300px;
+    }
+    main .contents {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+/* mobile version */
+
+@media(max-width:425px) {
+    body {
+        background-image: url(assets/ca-mobile.webp);
+    }
+    .container {
+        width: 320px;
+        height: 600px;
+    }
+    header {
+        width: 100%;
+        height: 56px;
+    }
+    header nav ul {
+        display: none;
+    }
+    header nav img {
+        width: 140px;
+    }
+    main {
+        width: 100%;
+        height: 240px;
+    }
+    main .contents {
+        width: 100%;
+        height: 300px;
+    }
+}
